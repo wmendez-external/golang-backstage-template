@@ -33,6 +33,9 @@ spec:
           title: Description
           type: string
           description: Project description
+          ui:widget: textarea
+          ui:options:
+            rows: 10
         version:
           title: Version
           type: string
@@ -65,6 +68,7 @@ spec:
         url: ./content
         values:
           name: ${{ parameters.name }}
+          description: ${{ parameters.description }}
           owner: ${{ (parameters.repoUrl | parseRepoUrl).owner }}
           repo: ${{ (parameters.repoUrl | parseRepoUrl).repo }}
           go_version: ${{ parameters.version }}
