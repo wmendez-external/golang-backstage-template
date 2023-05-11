@@ -1,3 +1,3 @@
-module github.com/${{ values.owner }}/${{ values.repo }}/${{ values.name }}
+module github.com/${{ values.owner }}/${{ values.repo }}
 
 go ${{ values.go_version }}
