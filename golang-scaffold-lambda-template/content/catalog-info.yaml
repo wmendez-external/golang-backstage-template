@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ values.name | dump }}
+  description: ${{ values.description | dump }}
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - golang
+    - go
+    - aws-lambda
+    - serverless
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
